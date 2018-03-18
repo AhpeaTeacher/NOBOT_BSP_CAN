@@ -27,7 +27,7 @@ void Get_Motor(struct Get_Motor* inst)
 	//≤È—ØJV
 	Set_Arry(_cmd, 0x4A, 0x56, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00);
 	Can_Write_0.wData_Adr = (UDINT)_cmd;
-	Can_Write_0.wLen = 8;
+	Can_Write_0.wLen = 4;
 	Can_Write(&Can_Write_0);
 	//≤È—ØIQ
 	Set_Arry(_cmd, 0x49, 0x51, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00);
