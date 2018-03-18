@@ -1,0 +1,16 @@
+VAR CONSTANT
+	Mo : USINT := 1;
+	Bg : USINT := 2;
+	St : USINT := 3;
+	Ac : USINT := 4;
+	Dc : USINT := 5;
+	Um : USINT := 6;
+	Pa : USINT := 7;
+	Pr : USINT := 8;
+	Sp : USINT := 9;
+	Jv : USINT := 10;
+	Px : USINT := 11;
+	Iq : USINT := 12;
+	Ec : USINT := 13;
+	Vx : USINT := 14;
+END_VAR

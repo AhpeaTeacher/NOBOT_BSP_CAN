@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.3.196?>
+<Package Version="1.00.0" xmlns="http://br-automation.co.at/AS/Package">
+  <Objects>
+    <Object Type="File" Description="全局数据类型">Global.typ</Object>
+    <Object Type="File" Description="全局变量">Global.var</Object>
+    <Object Type="Package" Description="全局库">Libraries</Object>
+    <Object Type="Program" Language="ANSIC">Program</Object>
+  </Objects>
+</Package>

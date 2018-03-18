@@ -1,0 +1,2 @@
+Bsp_Can	"$(AS_CPU_PATH)/Bsp_Can/Can_Init.c.o" "$(AS_CPU_PATH)/Bsp_Can/Can_Write.c.o" "$(AS_CPU_PATH)/Bsp_Can/Set_Motor.c.o" "$(AS_CPU_PATH)/Bsp_Can/Get_Motor.c.o"  -o "$(AS_STATIC_ARCHIVES_PATH)/libBsp_Can_s.a"  -G V4.1.2  -T SG4  -M ARM 
+Bsp_Alex	"$(AS_CPU_PATH)/Bsp_Alex/Update_ElmoMotor.c.o"  -o "$(AS_STATIC_ARCHIVES_PATH)/libBsp_Alex_s.a"  -G V4.1.2  -T SG4  -M ARM 

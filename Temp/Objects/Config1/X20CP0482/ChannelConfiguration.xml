@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<?AutomationRuntimeIOSystem Version = 2.5.0.7?>
+<ChannelConfiguration xmlns="http://www.br-automation.com/AR/IO">
+  <Module ID="$root" Hardware="X20BB67" HardwareModuleName="X20CP0482" ModuleID="8">
+    <Channel ID="SerialNumber_CPU" Description="" Ext="/HW" Address="0" Direction="IN" Type="UDINT" ChannelType="GenericFuncCall" Function="HwGetSerialNumber" Sig_St_Udint="1" />
+    <Channel ID="ModuleID_CPU" Description="" Ext="/HW" Address="1" Direction="IN" Type="UINT" ChannelType="ModuleIDCpu" Sig_St_Uint="1" />
+    <Channel ID="HardwareVariant" Description="" Ext="/HW" Address="2" Direction="IN" Type="UINT" ChannelType="HardwareVariant" Sig_St_Uint="1" />
+    <Channel ID="FirmwareVersion" Description="" Ext="/HW" Address="3" Direction="IN" Type="UINT" ChannelType="FirmwareVersion" Sig_St_Uint="1" />
+    <Channel ID="TemperatureCPU" Description="" Ext="/HW" Address="4" Direction="IN" Type="INT" Sig_Temp_CpuTemp="1" ChannelType="Temp" Ordinal="2" />
+    <Channel ID="TemperatureENV" Description="" Ext="/HW" Address="5" Direction="IN" Type="INT" Sig_Temp_CpuTemp="1" ChannelType="Temp" Ordinal="1" />
+    <Channel ID="SystemTime" Description="" Ext="/HW" Address="6" Direction="IN" Type="DINT" Sig_St_Dint="1" ChannelType="SystemTime" />
+    <Channel ID="IF3.LinkOk" Description="" Ext="/INFO" Address="0x8000001A" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="IF3.OutputDMAMargin" Description="" Ext="/INFO" Address="0x8000000C" Direction="IN" Type="DINT" Sig_St_Dint="1" />
+    <Channel ID="IF3.NodeNumber" Description="" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="USINT" />
+    <Channel ID="IF3.CycleOk" Description="" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="BOOL" />
+    <Channel ID="IF3.SyncOk" Description="" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="BOOL" />
+    <Channel ID="IF3.TimeSeconds" Description="" FromVersion="M2.90" Ext="/INFO" Direction="IN" Type="UDINT" />
+    <Channel ID="IF3.TimeNanoseconds" Description="" FromVersion="M2.90" Ext="/INFO" Direction="IN" Type="UDINT" />
+    <Channel ID="IF3.NettimeSoC" Description="" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF3.NettimeOffset" Description="" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF3.CycleCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="UDINT" />
+    <Channel ID="IF3.FailedCycleCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="UDINT" />
+    <Channel ID="IF3.CycleTimeViolationCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="UDINT" />
+    <Channel ID="IF3.CycleIdleTime" Description="" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="UDINT" />
+    <Channel ID="IF3.CycleCongestionCount" Description="" FromVersion="B2.87" Ext="/INFO" Direction="IN" Type="UDINT" />
+  </Module>
+  <Module ID="$root" Hardware="X20BB67" HardwareModuleName="X20BB67" ModuleID="1">
+    <Channel ID="ModuleID_BB" Description="" Ext="/HW" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1" ChannelType="ModuleID" />
+    <Channel ID="IF6.CycleCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.BreakCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.Nettime" Description="" FromVersion="I2.90" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.SyncErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.SyncSramErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.SyncBusyErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.SyncNoRxErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.SyncFormatErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.SyncPendingErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.AsyncErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.AsyncSramErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.AsyncBusyErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.AsyncNoRxErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.AsyncFormatErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.AsyncPendingErrorCount" Description="" FromVersion="I2.85" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.DMALateOutputErrorCount" Description="" FromVersion="G2.93" Ext="/INFO" Direction="IN" Type="DINT" />
+    <Channel ID="IF6.NrOfStationsMax" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x80000113" Direction="IN" Type="USINT" Diagnose="/DIAG" />
+    <Channel ID="IF6.NrOfStationsConfigured" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x80000114" Direction="IN" Type="USINT" Diagnose="/DIAG" />
+    <Channel ID="IF6.StationAtBusEnd" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x80000115" Direction="IN" Type="USINT" Diagnose="/DIAG" />
+    <Channel ID="IF6.StationAtBusEndChangeTime" Description="" FromVersion="A3.08" Ext="/INFO" Address="0xC0000115" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG" />
+    <Channel ID="IF6.StationPastOutFrameError" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x80000116" Direction="IN" Type="USINT" Diagnose="/DIAG" />
+    <Channel ID="IF6.StationPastOutFrameErrorChangeTime" Description="" FromVersion="A3.08" Ext="/INFO" Address="0xC0000116" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG" />
+    <Channel ID="IF6.StationPastInFrameError" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x80000117" Direction="IN" Type="USINT" Diagnose="/DIAG" />
+    <Channel ID="IF6.StationPastInFrameErrorChangeTime" Description="" FromVersion="A3.08" Ext="/INFO" Address="0xC0000117" Direction="IN" Type="DATE_AND_TIME" Diagnose="/DIAG" />
+    <Channel ID="IF6.SyncInFrameSize" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x80000118" Direction="IN" Type="DINT" Diagnose="/DIAG" />
+    <Channel ID="IF6.SyncOutFrameSize" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x80000119" Direction="IN" Type="DINT" Diagnose="/DIAG" />
+    <Channel ID="IF6.AsyncFrameSize" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x8000011A" Direction="IN" Type="DINT" Diagnose="/DIAG" />
+    <Channel ID="IF6.AsyncFrameSpareSize" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x8000011B" Direction="IN" Type="DINT" Diagnose="/DIAG" />
+    <Channel ID="IF6.BusLengthConfigured" Description="" FromVersion="A3.08" Ext="/INFO" Address="0x8000011C" Direction="IN" Type="DINT" Diagnose="/DIAG" />
+    <Channel ID="IF7.TerminatingResistor" Description="" Ext="/HW" Address="1" Direction="IN" Type="BOOL" ChannelType="Statistic" />
+  </Module>
+  <Module ID="PS1" Hardware="X20PS9600" HardwareModuleName="X20PS9600" ModuleID="14">
+    <Channel ID="ModuleOk" Description="" Ext="/OK" Address="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="SerialNumber" Description="" Ext="/INFO" Address="4" Direction="IN" Type="UDINT" Sig_St_Udint="1" />
+    <Channel ID="ModuleID" Description="" Ext="/INFO" Address="10" Direction="IN" Type="UINT" Sig_St_Uint="1" />
+    <Channel ID="HardwareVariant" Description="" Ext="/INFO" Address="12" Direction="IN" Type="UINT" Sig_St_Uint="1" />
+    <Channel ID="FirmwareVersion" Description="" Ext="/INFO" Address="14" Direction="IN" Type="UINT" Sig_St_Uint="1" />
+    <Channel ID="StatusInput01" Description="" Ext="/FIXED" Address="1" BitOffset="0" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+    <Channel ID="StatusInput02" Description="" Ext="/FIXED" Address="1" BitOffset="2" Direction="IN" Type="BOOL" Sig_St_Bool="1" />
+  </Module>
+</ChannelConfiguration>

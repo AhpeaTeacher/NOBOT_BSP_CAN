@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.3.196?>
+<Cpu xmlns="http://br-automation.co.at/AS/Cpu">
+  <Objects>
+    <Object Type="File" Description="软件配置">Cpu.sw</Object>
+    <Object Type="File" Description="永久变量">Cpu.per</Object>
+    <Object Type="File" Description="I/O 映射">IoMap.iom</Object>
+    <Object Type="File" Description="变量映射">PvMap.vvm</Object>
+    <Object Type="Package">Connectivity</Object>
+    <Object Type="Package">TextSystem</Object>
+    <Object Type="Package">UnitSystem</Object>
+    <Object Type="Package">AccessAndSecurity</Object>
+    <Object Type="Package">mapp</Object>
+  </Objects>
+  <Configuration ModuleId="X20CP0482">
+    <AutomationRuntime Version="D4.34" />
+    <Build GccVersion="4.1.2" />
+    <DefaultTargetMemory Tasks="UserROM" />
+    <Vc FirmwareVersion="V4.34.1" />
+  </Configuration>
+</Cpu>

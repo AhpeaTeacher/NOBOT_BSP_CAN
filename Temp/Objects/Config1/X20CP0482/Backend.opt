@@ -1,0 +1,3 @@
+Bsp_Can	"$(AS_CPU_PATH)/Bsp_Can/a.out" -o "$(AS_CPU_PATH)/Bsp_Can/Bsp_Can.ox" -T SG4 -M ARM -r Library   -G V4.1.2  -B D4.34
+Bsp_Alex	"$(AS_CPU_PATH)/Bsp_Alex/a.out" -o "$(AS_CPU_PATH)/Bsp_Alex/Bsp_Alex.ox" -T SG4 -M ARM -r Library   -G V4.1.2  -B D4.34
+Program	"$(AS_CPU_PATH)/Program/a.out" -o "$(AS_CPU_PATH)/Program/Program.ox" -T SG4 -M ARM -r Cyclic4   -G V4.1.2  -B D4.34

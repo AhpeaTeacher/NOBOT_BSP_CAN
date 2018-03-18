@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.3.3.196?>
+<Configuration xmlns="http://br-automation.co.at/AS/Configuration">
+  <Objects>
+    <Object Type="File" Description="硬件配置" Reference="true">F:\NOBOTcode\AGV\AGV_V001\Physical\NOBOT_3s\Hardware.hw</Object>
+    <Object Type="File" Description="硬件拓扑结构" Reference="true">F:\NOBOTcode\AGV\AGV_V001\Physical\NOBOT_3s\Hardware.hwl</Object>
+    <Object Type="Cpu">X20CP0482</Object>
+    <Object Type="File">Hardware.jpg</Object>
+  </Objects>
+  <Sources Download="false" IncludeUpgrades="true" Mode="ProjectTransfer" Option="Complete" />
+</Configuration>

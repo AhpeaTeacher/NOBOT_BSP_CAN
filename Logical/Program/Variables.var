@@ -1,0 +1,6 @@
+VAR
+	Can_Init_0 : Can_Init;
+	ElmoMotor_0 : ElmoMotor;
+	Update_ElmoMotor_0 : Update_ElmoMotor;
+	Begin_Flag : BOOL := TRUE;
+END_VAR

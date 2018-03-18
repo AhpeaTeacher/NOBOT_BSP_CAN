@@ -1,0 +1,8 @@
+$(AS_CPU_PATH)/Bsp_Alex/Update_ElmoMotor.c.o:
+$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Update_ElmoMotor.c
+$(AS_GNU_INST_PATH)/arm-elf/include/bur/plctypes.h
+$(AS_GNU_INST_PATH)/arm-elf/include/bur/plc.h
+$(AS_TEMP_PATH)/Includes/Bsp_Alex.h
+$(AS_TEMP_PATH)/Includes/Bsp_Can.h
+$(AS_TEMP_PATH)/Includes/CAN_Lib.h
+$(AS_TEMP_PATH)/Includes/runtime.h

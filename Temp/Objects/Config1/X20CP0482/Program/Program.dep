@@ -1,0 +1,4 @@
+$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Can/Bsp_Can.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Bsp_Alex.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Types.typ
+$(AS_PROJECT_PATH)/Logical/Program/Variables.var
