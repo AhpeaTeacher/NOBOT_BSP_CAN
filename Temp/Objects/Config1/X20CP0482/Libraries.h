@@ -1,8 +1,8 @@
 /* AS生成头文件 */
 /* 不能编辑! */
 
-#ifndef _LIBRARIES_20180318164308_
-#define _LIBRARIES_20180318164308_
+#ifndef _LIBRARIES_20180318222038_
+#define _LIBRARIES_20180318222038_
 
 __asm__(".section \".plc\"");
 
@@ -514,5 +514,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/Bsp_Alex/Constants.var\\\" scope
 __asm__(".previous");
 
 
-#endif /* _LIBRARIES_20180318164308_ */
+#endif /* _LIBRARIES_20180318222038_ */
 

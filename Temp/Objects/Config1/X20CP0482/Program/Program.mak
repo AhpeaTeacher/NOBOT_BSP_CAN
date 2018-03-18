@@ -1,5 +1,5 @@
-UnmarkedObjectFolder := F:/NOBOTcode/Bsp_Can/Bsp_Can_V001/Logical/Program
-MarkedObjectFolder := F:/NOBOTcode/Bsp_Can/Bsp_Can_V001/Logical/Program
+UnmarkedObjectFolder := F:/NOBOTcode/BSP/NOBOT_BSP_CAN/Logical/Program
+MarkedObjectFolder := F:/NOBOTcode/BSP/NOBOT_BSP_CAN/Logical/Program
 
 $(AS_CPU_PATH)/Program.br: \
 	$(AS_PROJECT_CPU_PATH)/Cpu.per \
@@ -19,7 +19,10 @@ $(AS_CPU_PATH)/Program/a.out: \
 
 $(AS_CPU_PATH)/Program/Cyclic.c.o: \
 	$(AS_PROJECT_PATH)/Logical/Program/Cyclic.c \
-	FORCE 
+	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Can/Bsp_Can.fun \
+	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Bsp_Alex.fun \
+	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Types.typ \
+	$(AS_PROJECT_PATH)/Logical/Program/Variables.var
 	@'$(AS_BIN_PATH)/BR.AS.CCompiler.exe' '$(AS_PROJECT_PATH)/Logical/Program/Cyclic.c' -o '$(AS_CPU_PATH)/Program/Cyclic.c.o'  -T SG4  -M ARM  -B D4.34 -G V4.1.2  -s 'Program' -t '$(AS_TEMP_PATH)' -specs=ARMspecs_brelf -I '$(AS_PROJECT_PATH)/Logical/Program' '$(AS_TEMP_PATH)/Includes/Program' '$(AS_TEMP_PATH)/Includes' -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -ggdb -Wall -include '$(AS_CPU_PATH)/Libraries.h' -x c -P '$(AS_PROJECT_PATH)' -secret '$(AS_PROJECT_PATH)_br.as.ccompiler.exe'
 
 $(AS_CPU_PATH)/Program/Init.c.o: \
@@ -39,7 +42,6 @@ $(AS_CPU_PATH)/Program/Exit.c.o: \
 	@'$(AS_BIN_PATH)/BR.AS.CCompiler.exe' '$(AS_PROJECT_PATH)/Logical/Program/Exit.c' -o '$(AS_CPU_PATH)/Program/Exit.c.o'  -T SG4  -M ARM  -B D4.34 -G V4.1.2  -s 'Program' -t '$(AS_TEMP_PATH)' -specs=ARMspecs_brelf -I '$(AS_PROJECT_PATH)/Logical/Program' '$(AS_TEMP_PATH)/Includes/Program' '$(AS_TEMP_PATH)/Includes' -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -ggdb -Wall -include '$(AS_CPU_PATH)/Libraries.h' -x c -P '$(AS_PROJECT_PATH)' -secret '$(AS_PROJECT_PATH)_br.as.ccompiler.exe'
 
 $(AS_CPU_PATH)/Program/_bur_pvdef.c.o: \
-	FORCE  \
 	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Can/Bsp_Can.fun \
 	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Bsp_Alex.fun \
 	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Types.typ \

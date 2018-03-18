@@ -1,5 +1,5 @@
-UnmarkedObjectFolder := F:/NOBOTcode/Bsp_Can/Bsp_Can_V001/Physical/Config1/X20CP0482/AccessAndSecurity/UserRoleSystem
-MarkedObjectFolder := F:/NOBOTcode/Bsp_Can/Bsp_Can_V001/Physical/Config1/X20CP0482/AccessAndSecurity/UserRoleSystem
+UnmarkedObjectFolder := F:/NOBOTcode/BSP/NOBOT_BSP_CAN/Physical/Config1/X20CP0482/AccessAndSecurity/UserRoleSystem
+MarkedObjectFolder := F:/NOBOTcode/BSP/NOBOT_BSP_CAN/Physical/Config1/X20CP0482/AccessAndSecurity/UserRoleSystem
 
 $(AS_CPU_PATH)/User.br: \
 	$(AS_PROJECT_CPU_PATH)/AccessAndSecurity/UserRoleSystem/User.user \

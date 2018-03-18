@@ -1,5 +1,5 @@
-UnmarkedObjectFolder := F:/NOBOTcode/Bsp_Can/Bsp_Can_V001/Logical/Libraries/Bsp_Can
-MarkedObjectFolder := F:/NOBOTcode/Bsp_Can/Bsp_Can_V001/Logical/Libraries/Bsp_Can
+UnmarkedObjectFolder := F:/NOBOTcode/BSP/NOBOT_BSP_CAN/Logical/Libraries/Bsp_Can
+MarkedObjectFolder := F:/NOBOTcode/BSP/NOBOT_BSP_CAN/Logical/Libraries/Bsp_Can
 
 $(AS_CPU_PATH)/Bsp_Can.br: \
 	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Can/ANSIC.lby \
@@ -46,12 +46,11 @@ $(AS_CPU_PATH)/Bsp_Can/Set_Motor.c.o: \
 
 $(AS_CPU_PATH)/Bsp_Can/Get_Motor.c.o: \
 	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Can/Get_Motor.c \
-	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Can/Bsp_Can.fun \
-	$(AS_PROJECT_PATH)/Logical/Libraries/CAN_Lib/CAN_Lib.fun \
-	$(AS_TEMP_PATH)/Includes/Bsp_Can.h \
-	$(AS_TEMP_PATH)/Includes/CAN_Lib.h \
-	$(AS_TEMP_PATH)/Includes/runtime.h
+	FORCE 
 	@'$(AS_BIN_PATH)/BR.AS.CCompiler.exe' '$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Can/Get_Motor.c' -o '$(AS_CPU_PATH)/Bsp_Can/Get_Motor.c.o'  -T SG4  -M ARM  -B D4.34 -G V4.1.2  -s 'Libraries.Bsp_Can' -t '$(AS_TEMP_PATH)' -specs=ARMspecs_brelf -r Library -I '$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Can' '$(AS_TEMP_PATH)/Includes/Libraries/Bsp_Can' '$(AS_TEMP_PATH)/Includes' -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -ggdb -Wall -include '$(AS_CPU_PATH)/Libraries.h' -D _BSP_CAN_EXPORT -x c -P '$(AS_PROJECT_PATH)' -secret '$(AS_PROJECT_PATH)_br.as.ccompiler.exe'
 
 -include $(AS_CPU_PATH)/Force.mak 
 
+
+
+FORCE:

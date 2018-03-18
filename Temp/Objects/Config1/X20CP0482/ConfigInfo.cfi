@@ -15,11 +15,11 @@
       Source="Program"
       Language="ANSIC">
       <File
-        Path="F:\NOBOTcode\Bsp_Can\Bsp_Can_V001\Logical\Program\Types.typ" />
+        Path="F:\NOBOTcode\BSP\NOBOT_BSP_CAN\Logical\Program\Types.typ" />
       <File
-        Path="F:\NOBOTcode\Bsp_Can\Bsp_Can_V001\Logical\Program\Variables.var" />
+        Path="F:\NOBOTcode\BSP\NOBOT_BSP_CAN\Logical\Program\Variables.var" />
       <File
-        Path="F:\NOBOTcode\Bsp_Can\Bsp_Can_V001\Temp\Objects\Config1\X20CP0482\Program\ProgramLocal.var" />
+        Path="F:\NOBOTcode\BSP\NOBOT_BSP_CAN\Temp\Objects\Config1\X20CP0482\Program\ProgramLocal.var" />
     </Task>
   </TaskClass>
   <TaskClass

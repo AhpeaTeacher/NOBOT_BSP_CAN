@@ -5,10 +5,10 @@
     <ConnectionParameters>/RT=1000 /AM=* /SDT=5 /DAIP=192.168.1.10 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>F:\NOBOTcode\Bsp_Can\Bsp_Can_V001\Bsp_Can_V001.apj</ApjFullFileName>
+    <ApjFullFileName>F:\NOBOTcode\BSP\NOBOT_BSP_CAN\Bsp_Can_V001.apj</ApjFullFileName>
     <ProjectName>Bsp_Can_V001</ProjectName>
     <ActiveConfigurationName>Config1</ActiveConfigurationName>
-    <LicenseDataFolder>F:\NOBOTcode\Bsp_Can\Bsp_Can_V001\Temp\Objects\Config1\X20CP0482</LicenseDataFolder>
+    <LicenseDataFolder>F:\NOBOTcode\BSP\NOBOT_BSP_CAN\Temp\Objects\Config1\X20CP0482</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>

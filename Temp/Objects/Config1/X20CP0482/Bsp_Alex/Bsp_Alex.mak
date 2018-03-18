@@ -1,5 +1,5 @@
-UnmarkedObjectFolder := F:/NOBOTcode/Bsp_Can/Bsp_Can_V001/Logical/Libraries/Bsp_Alex
-MarkedObjectFolder := F:/NOBOTcode/Bsp_Can/Bsp_Can_V001/Logical/Libraries/Bsp_Alex
+UnmarkedObjectFolder := F:/NOBOTcode/BSP/NOBOT_BSP_CAN/Logical/Libraries/Bsp_Alex
+MarkedObjectFolder := F:/NOBOTcode/BSP/NOBOT_BSP_CAN/Logical/Libraries/Bsp_Alex
 
 $(AS_CPU_PATH)/Bsp_Alex.br: \
 	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/ANSIC.lby \
@@ -16,11 +16,14 @@ $(AS_CPU_PATH)/Bsp_Alex/a.out: \
 
 $(AS_CPU_PATH)/Bsp_Alex/Update_ElmoMotor.c.o: \
 	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Update_ElmoMotor.c \
-	FORCE 
+	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Bsp_Alex.fun \
+	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Types.typ \
+	$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Can/Bsp_Can.fun \
+	$(AS_TEMP_PATH)/Includes/Bsp_Alex.h \
+	$(AS_TEMP_PATH)/Includes/Bsp_Can.h \
+	$(AS_TEMP_PATH)/Includes/CAN_Lib.h \
+	$(AS_TEMP_PATH)/Includes/runtime.h
 	@'$(AS_BIN_PATH)/BR.AS.CCompiler.exe' '$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex/Update_ElmoMotor.c' -o '$(AS_CPU_PATH)/Bsp_Alex/Update_ElmoMotor.c.o'  -T SG4  -M ARM  -B D4.34 -G V4.1.2  -s 'Libraries.Bsp_Alex' -t '$(AS_TEMP_PATH)' -specs=ARMspecs_brelf -r Library -I '$(AS_PROJECT_PATH)/Logical/Libraries/Bsp_Alex' '$(AS_TEMP_PATH)/Includes/Libraries/Bsp_Alex' '$(AS_TEMP_PATH)/Includes' -trigraphs -fno-asm -D _DEFAULT_INCLUDES -D _SG4 -fPIC -O0 -ggdb -Wall -include '$(AS_CPU_PATH)/Libraries.h' -D _BSP_ALEX_EXPORT -x c -P '$(AS_PROJECT_PATH)' -secret '$(AS_PROJECT_PATH)_br.as.ccompiler.exe'
 
 -include $(AS_CPU_PATH)/Force.mak 
 
-
-
-FORCE:
